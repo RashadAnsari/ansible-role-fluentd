@@ -1,0 +1,7 @@
+# {{ ansible_managed }}
+
+<system>
+  workers {{ fluentd_worker_count }}
+</system>
+
+@include /etc/td-agent/conf.d/*.conf
